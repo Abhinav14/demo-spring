@@ -1,0 +1,23 @@
+package interview;
+
+import java.util.Scanner;
+
+public class PalindromeCheckWithoutLF2 {
+	private static boolean isPalindrome(String str){
+		if(str == null){
+			return false;
+		}
+		for(int i = 0; i < str.length()/2; i++){
+			if(str.charAt(i) != str.charAt((str.length()-1)-i)){
+				return false;
+			}
+		}
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the String : ");
+		System.out.println(isPalindrome(sc.nextLine()));
+	}
+}
