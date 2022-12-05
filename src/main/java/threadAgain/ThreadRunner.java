@@ -14,6 +14,10 @@ public class ThreadRunner {
 		ThreadThree threadThree = new ThreadThree();
 		Thread t3 = new Thread(threadThree);
 		t3.start();
+		System.out.print("\nThreadFour Kicked Off");
+		ThreadFour threadFour = new ThreadFour();
+		Thread t4 = new Thread(threadFour);
+		
 	}
 
 }
