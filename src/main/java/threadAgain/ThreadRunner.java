@@ -19,7 +19,7 @@ public class ThreadRunner {
 		Thread t4 = new Thread(threadFour);
 		t4.start();
 		System.out.print("\nThreadFive Kicked Off");
-		ThreadFour threadFive = new ThreadFive();
+		ThreadFive threadFive = new ThreadFive();
 		Thread t5 = new Thread(threadFive);
 	}
 
