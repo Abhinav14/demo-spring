@@ -21,6 +21,23 @@ public class ThreadRunner {
 		System.out.print("\nThreadFive Kicked Off");
 		ThreadFive threadFive = new ThreadFive();
 		Thread t5 = new Thread(threadFive);
+		t5.start();
+		System.out.print("\nThreadSix Kicked Off");
+                ThreadSix threadSix = new ThreadSix();
+                Thread t6 = new Thread(threadSix);
+		t6.start();
+		System.out.print("\nThreadSeven Kicked Off");
+                ThreadSeven threadSeven = new ThreadSeven();
+                Thread t7 = new Thread(threadSeven);
+                t7.start();
+		System.out.print("\nThreadNine Kicked Off");
+                ThreadNine threadNine = new ThreadNine();
+                Thread t9 = new Thread(threadNine);
+                t9.start();
+		System.out.print("\nThreadEight Kicked Off");
+                ThreadSeven threadEight = new ThreadEight();
+                Thread t8 = new Thread(threadEight);
+               	t8.start();
 	}
 
 }
