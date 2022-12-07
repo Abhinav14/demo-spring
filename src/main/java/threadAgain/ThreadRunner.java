@@ -35,7 +35,7 @@ public class ThreadRunner {
                 Thread t9 = new Thread(threadNine);
                 t9.start();
 		System.out.print("\nThreadEight Kicked Off");
-                ThreadSeven threadEight = new ThreadEight();
+                ThreadEight threadEight = new ThreadEight();
                 Thread t8 = new Thread(threadEight);
                	t8.start();
 	}
