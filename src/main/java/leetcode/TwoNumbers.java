@@ -26,6 +26,7 @@ public class TwoNumbers {
 	public static void main(String[] args) {
 		List<int[]> result = getPairs(new int[]{4, 6, 5, -10, 8, 5, 20}, 10);
 		if(!result.isEmpty()){
+
 			result.stream().forEach(x-> System.out.println(x[0]+", "+x[1]));
 		}
 	}
