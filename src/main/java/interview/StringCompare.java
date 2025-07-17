@@ -1,7 +1,5 @@
 package interview;
 
-import java.util.StringJoiner;
-
 public class StringCompare {
 
 	public static void main(String[] args) {

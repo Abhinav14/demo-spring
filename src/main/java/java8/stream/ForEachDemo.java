@@ -1,6 +1,7 @@
 package java8.stream;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -8,6 +9,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import javax.security.auth.x500.X500Principal;
+
+import ch.qos.logback.core.net.SyslogOutputStream;
 
 public class ForEachDemo {
 
@@ -46,9 +49,17 @@ public class ForEachDemo {
 			}
 		}*/
 		
-		for(int i = 0; i < hMap.size(); i++) {
-			
-		}
+		
+		/*for (String string : tempList) {
+			if(string.startsWith("A")) {
+				System.out.println(string);
+			}
+		}*/
+		
+		//tempList.stream().filter((t)->t.startsWith("A")).forEach(y->System.out.println(y));
+		
+		//tempList.stream().sorted().forEach(a->System.out.println(a));
+		tempList.stream().sorted((y,x)->x.compareTo(y)).forEach(a->System.out.println(a));
 		
 	}
 
