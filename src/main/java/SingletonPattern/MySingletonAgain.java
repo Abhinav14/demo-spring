@@ -2,7 +2,7 @@ package SingletonPattern;
 
 import java.io.Serializable;
 
-public class MySingletonAgain implements Serializable {
+public class MySingletonAgain implements Serializable, Cloneable {
     private static final long serialVersionUID = 1L;
 
     private static class Holder{
@@ -21,6 +21,11 @@ public class MySingletonAgain implements Serializable {
 //making serializable safe
     protected Object readResolve(){
         return getInstance();
+    }
+
+//making cloneable proof
+    protected Object clone() throws CloneNotSupportedException{
+            throw new CloneNotSupportedException("cloning of this singleton is not allowed");
     }
 }
 
