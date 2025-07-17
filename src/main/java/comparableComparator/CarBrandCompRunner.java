@@ -18,9 +18,9 @@ public class CarBrandCompRunner {
 		cars.stream().forEach(x->System.out.println(x));
 		
 		
-		CarComparator carComparator = new CarComparator();
+		/*CarComparator carComparator = new CarComparator();
 		Collections.sort(cars, carComparator);
-		cars.stream().forEach(y->System.out.println(y));
+		cars.stream().forEach(y->System.out.println(y));*/
 		
 		
 		
